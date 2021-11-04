@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALAPAGOS</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="images/logo.ico"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+<body class="home">
+  <!--This is the header containing the navigation bar-->
+    <header>
+        <div class="menuBar">
+            <nav>
+                    <img src="images/logo.png"/>
+                <h2>GALAPAGOS</h2>
+<!--This input and label tags holds the lines that requires clicking to see the navigation bar in mobile and tablet-->
+                <input type="checkbox" id="mobileNav">
+              <label for="mobileNav" class="mobileNavBtn">
+                <i class="fas fa-bars"></i>
+              </label>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Genre</a></li>                
+                    <li><a href="#">Trending</a></li>                
+                    <li><a href="#">New Releases</a></li>                
+                    <li><a href="#">Login</a></li>
+                </ul>
+                <div class="search">
+                 <input class="searchbox" type="search" name="" placeholder="Type to search">
+                 <!--<button type="submit"><i class="fa fa-search"></i></button>-->
+                 <a class="searchBtn" href="#"></a>
+                </div>   
+            </nav>               
+        </div>
+    </header>
+<!--The middle section containing a movie with brief description-->
+    <section class="homeMovie">
+      <div class="homeMovie-box"><!--This holds details of the movie in a box-->
+        <div class="homeMovie-image">
+          <img src="images/Dune.jpg"/>
+        </div>
+        <div class="homeMovie-content">
+          <p><b><span style="font-size: 22px">DUNE</span> </b></p>
+          <form action="images/Dune.mp4" method="get" target="_blank">
+            <button type="submit">Watch Trailer</button>
+          </form>
+          <p>Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.<br><br></p>
+          <ul>
+            <li class="star"><!--Movie Rating-->
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star-half-alt"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+            </li>
+            <li>Runtime:  <span style="color: white">2h 35min</span></li>
+            <li>
+              Genre:
+              <button class="button"><span style="color: white" >Action</span> </button>
+              <button class="button"><span style="color: white" >Adventure</span></button>
+              <button class="button"><span style="color: white" >Drama</span></button>
+              <button class="button"><span style="color: white" >Sci-Fi</span></button>
+            </li>
+            <li>Released: <span style="color: white">2021</span></li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+<!--The list of movies. Both trending and new releases-->
+    <section class="movie">
+      <div class="movie-box">
+        <div class="trending">
+          <h2>Trending</h2>
+        </div>
+        <div class="movie-image">
+            <div class="inner-movie-image">
+              <a href="#"><img src="images/No time to die.jpg"></a>
+            </div>
+            <div class="description">
+              <h4>No Time To Die</h4>
+              <h4>Runtime:&nbsp<span>2h 43m</span></h4>
+            </div>
+            <div class="star">
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+            </div>
+        </div>
+        <div class="movie-image">
+            <div class="inner-movie-image">
+              <a href="KingofBoys.html"><img src="images/King of Boys.jpg"></a>
+            </div>
+            <div class="description">
+              <h4>King of Boys<br></h4>
+              <h4>Runtime:&nbsp<span>7h 19m</span></h4>
+            </div>
+            <div class="star">
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star-half-alt"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+            </div>
+        </div>
+        <div class="movie-image">
+            <div class="inner-movie-image">
+              <a href="#"><img src="images/Bell Bottom.jpg"></a>
+            </div>
+            <div class="description">
+              <h4>Bell Bottom<br></h4>
+              <h4>Runtime:&nbsp<span>2h 5m</span></h4>
+            </div>
+            <div class="star">
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+            </div>
+        </div>
+        <div class="movie-image">
+            <div class="inner-movie-image">
+              <a href="#"><img src="images/Sea fever.jpg"></a>
+            </div>
+            <div class="description">
+              <h4>Sea fever<br></h4>
+              <h4>Runtime:&nbsp<span>1h 29m</span></h4>
+            </div>
+            <div class="star">
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star-half-alt"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+            </div>
+        </div>
+        <div class="movie-image">
+            <div class="inner-movie-image">
+              <a href="#"><img src="images/Dune.jpg"></a>
+            </div>
+            <div class="description">
+              <h4>Dune<br></h4>
+              <h4>Runtime:&nbsp<span>2h 35m</span></h4>
+            </div>
+            <div class="star">
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star-half-alt"></i></a>
+            </div>
+        </div>
+        <div class="movie-image">
+            <div class="inner-movie-image">
+              <a href="#"><img src="images/Bhavai.jpg"></a>
+            </div>
+            <div class="description">
+              <h4>Bhavai<br></h4>
+              <h4>Runtime:&nbsp<span>1h 54m</span></h4>
+            </div>
+            <div class="star">
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star-half-alt"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+            </div>
+        </div>
+    
+        <div class="new-release">
+          <h2>New Releases</h2>
+        </div>
+        <div class="movie-image">
+            <div class="inner-movie-image">
+              <a href="#"><img src="images/Sanitation Day.jpg"></a>
+            </div>
+            <div class="description">
+              <h4>Sanitation Day<br></h4>
+              <h4>Runtime:&nbsp<span>1h 50m</span></h4>
+            </div>
+            <div class="star">
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+            </div>
+        </div>
+        <div class="movie-image">
+            <div class="inner-movie-image">
+              <a href="#"><img src="images/The last duel.jpg"></a>
+            </div>
+            <div class="description">
+              <h4>The last duel<br></h4>
+              <h4>Runtime:&nbsp<span>2h 32m</span></h4>
+            </div>
+            <div class="star">
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star-half-alt"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+            </div>
+        </div>
+        <div class="movie-image">
+            <div class="inner-movie-image">
+              <a href="#"><img src="images/Unroyal.jpg"></a>
+            </div>
+            <div class="description">
+              <h4>Unroyal<br></h4>
+              <h4>Runtime:&nbsp<span>1h 36m</span></h4>
+            </div>
+            <div class="star">
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star-half-alt"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+            </div>
+        </div>
+        <div class="movie-image">
+            <div class="inner-movie-image">
+              <a href="#"><img src="images/Rialto.jpg"></a>
+            </div>
+            <div class="description">
+              <h4>Rialto<br></h4>
+              <h4>Runtime:&nbsp<span>1h 30m</span></h4>
+            </div>
+            <div class="star">
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+            </div>
+        </div>
+        <div class="movie-image">
+            <div class="inner-movie-image">
+              <a href="#"><img src="images/The Irishman.jpg"></a>
+            </div>
+            <div class="description">
+              <h4>The Irishman<br></h4>
+              <h4>Runtime:&nbsp<span>3h 29m</span></h4>
+            </div>
+            <div class="star">
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star-half-alt"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+            </div>
+        </div>
+        <div class="movie-image">
+            <div class="inner-movie-image">
+              <a href="#"><img src="images/Saina.jpg"></a>
+            </div>
+            <div class="description">
+              <h4>Saina<br></h4>
+              <h4>Runtime:&nbsp<span>2h 15m</span></h4>
+            </div>
+            <div class="star">
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="fas fa-star"></i></a>
+              <a href=""><i class="far fa-star"></i></a>
+            </div>
+        </div>
+      </div>
+    </section>
+   <!-- <footer class="bottom">
+      <div class="social-icons">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+      </div>
+    </footer>-->
+  <script type="text/javascript" src="jscript.js"></script>
+</body>
+</html>
