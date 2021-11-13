@@ -19,9 +19,9 @@
 }
 
 p{
-    font-weight: 30px;
+    font-weight: 25px;
 }
-
+/*navigation bar begins here*/
 .menuBar{
     width: 100%;
     margin:auto;
@@ -62,76 +62,24 @@ nav ul li{
     text-transform: uppercase;
     letter-spacing: 1.4px;
 }
-@media screen and (min-width: 1000px){
-  nav ul li{
-    margin: 0 20px 0 20px;
-  }
-}
-
 nav ul li a{
   text-decoration: none;
   color: lemonchiffon;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 nav ul li :hover{
   color:lightsalmon;
 }
 
-.button{
-  font-size: 17px;
-  border-radius: 5px; 
-  background: none;
-}
-
-.search{
-  width: 310px;
-  float: right;
-  /**margin-left: 250px;*/
-}
-.searchbox{
-  color: white;
-  width: 250px;
-  height: 40px;
-  background: rgba(255,50,25,0.5);
-  border: 1px solid black;
-  border-right: none;
-  font-size: 15px;
-  float: left;
-  padding: 8px;
-  border-radius: 10px;
-}
-
-.searchbox :hover{
-  background: rgba(0,0,0,0.4);
-}
-.search button{
-  float: left;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  background:indianred;
-  color: black;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.search button:hover{
-  color: grey;
-}
-
-
-/**
-@media screen and (max-width: 600px) {
-  .search button {
-      float: none;
-      width: 20px;
-      padding: 0;
+/*navigation bar for big tablets*/
+@media screen and (min-width: 1000px){
+  nav ul li{
+    margin: 0 20px 0 20px;
   }
-  
-}*/
+}
 
+/*button to hide navigation bar in phones and small tablets*/
 .mobileNavBtn{
   color:sandybrown;
   font-size: 25px;
@@ -144,6 +92,7 @@ nav ul li :hover{
   display: none;
 }
 
+/*navigation bar for mobile phones*/
 @media screen and (max-width:950px) and (min-width:270px){
   nav{
     padding:0px 50px;
@@ -152,7 +101,7 @@ nav ul li :hover{
     display: block;
   }
   nav .menuBar h2{
-    font-size: 30px;
+    font-size: 25px;
     float: left;
   }
   nav ul{
@@ -175,15 +124,47 @@ nav ul li :hover{
   }
   nav img{
     display: none;
-    /*float: left;
-    height: 30px;
-    width: 30px;*/
 }
   .search{
 
   }
 }
 
+
+/*search bar*/
+.search{
+  width: 100%;
+  float: right;
+}
+.searchbox{
+  color: white;
+  width: 260px;
+  height: 40px;
+  background: rgba(255,50,25);
+  border: 1px solid black;
+  border-right: none;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 10px;
+}
+.searchbox :hover{
+  background: rgba(0,0,0,0.4);
+}
+
+/* movie dropdown list */
+.dropMovie{
+  width:260px;
+  background: rgba(255,50,25);
+}
+.dropMovie a{
+  font-size: 18px;
+  text-decoration: none;
+  color: lightyellow;
+}
+.dropMovie a:hover{
+  color: black;
+}
+/*center movie in home description*/
 .homeMovie{
   width:80%;
   margin: auto;
@@ -205,7 +186,6 @@ nav ul li :hover{
   max-width: 100%;
   height: auto;
 }
-
 .homeMovie-content form button{
   color:white;
   background-color: rgba(0,0,0,0.4);
@@ -235,6 +215,13 @@ nav ul li :hover{
   padding: 0 3px;
 }
 
+.homeGenre{
+  font-size: 17px;
+  border-radius: 5px; 
+  background: none;
+}
+
+/*mobile phone view of the center movie in home description*/
 @media screen and (max-width:950px){
   .home{
     background-color: darkred;
@@ -247,6 +234,7 @@ nav ul li :hover{
   }
 }
 
+/*full movie list*/
 .movie{
   width: 90%;
   height: 100vh;
@@ -263,7 +251,7 @@ nav ul li :hover{
 }
 
 .movie-box p{
-  font-size: 30px;
+  font-size: 25px;
   padding-top: 20px;
 }
 
@@ -292,12 +280,12 @@ nav ul li :hover{
 
 .movie-image{
   display: flex;
-  width: 300px;
+  width: 210px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   box-shadow: 0 2px 4px rgb(0,0,0,25%);
-  margin: 20px;
+  margin: 3px;
   background-color: #652a0e;
 }
 
@@ -309,7 +297,7 @@ nav ul li :hover{
 }
 .inner-movie-image a img{
   width: 100%;
-  height: auto;
+  height: 240px;
 }
 
 .inner-movie-image a img:hover{
@@ -320,8 +308,6 @@ nav ul li :hover{
   text-align: center;
   background-color: #652a0e;
 }
-
-
 .description h4{
   font-size: 17px;
   font-weight: 1.9rem;
@@ -329,7 +315,8 @@ nav ul li :hover{
   color: lemonchiffon;
 }
 
-@media screen and (max-width:1100px) and (min-width:500px){
+/* nest hub screen */
+@media screen and (max-width:1300px) and (min-width:550px){
    .movie{
     width: 90%;
     height: 100vh;
@@ -345,22 +332,39 @@ nav ul li :hover{
   }
   .movie-image{
     display: flex;
-    width: 250px;
+    width: 240px;
   }
   
   .movie-image a img{
-    height: 300px;
-    width: 250px;
+    height: 250px;
+    width: 240px;
   }
   .inner-movie-image{
     display: block;
-    width: 250px;
+    width: 240px;
   }
 
   
 
 }
 
+/*mobile phone screen for movie list*/
+@media screen and (max-width:549px) and (min-width:460px){
+  .movie-image{
+    display: flex;
+    width: 230px;
+  }
+  
+  .movie-image a img{
+    height: 280px;
+    width: 230px;
+  }
+  .inner-movie-image{
+    display: block;
+    width: 230px;
+  }
+}
+/* mobile phone screen */
 @media screen and (max-width:450px){
   .movie{
     align-items: center;
@@ -390,6 +394,29 @@ nav ul li :hover{
   }
 }
 
+/*social media icons at the bottom of the home page*/
+.social-icons i{
+  color: lemonchiffon;
+  font-size: 30px;
+  padding: 7px;
+  background-color: maroon;
+}
+
+.social-icons i:hover{
+  color:brown;
+  font-size: 30px;
+  padding: 7px;
+  background-color:burlywood;
+}
+
+
+
+
+/***
+
+here begins the css for individual movie pages
+
+***/
 
 
 
@@ -401,6 +428,8 @@ nav ul li :hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  background-color: black;
 }
 .logo img{
   height: 50px;
@@ -409,25 +438,23 @@ nav ul li :hover{
 .logo h2{
   color: lemonchiffon;
 }
-/*.lineBox{
-  width: 90%;
-  justify-content: center;
-  margin-left: 20px;
+/*horizontal line in the page diving sections*/
+.lineBox{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.line{
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}*/
 .theLine{
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid grey;
   display: block;
   width: 100%;
 }
+.single{
+  float:none;
+}
 .singleMovie{
-  width:90%;
-  height: 100vh;
-  display: flex;
+  width:100%;
+  height: 1000px;
+  /**display: flex;**/
 }
 .singleMovieImage{
   width: 100%;
@@ -442,4 +469,232 @@ nav ul li :hover{
 .singleMovieImage video{
   width: 800px;
   height: 450px;
+  
+}
+.genre{
+  font-size: 17px;
+  border-radius: 20px; 
+  padding:  5px;
+  background: none;
+  color: lemonchiffon;
+  border-color: gray;
+  border-width: 3px;
+}
+.singleMovieContentBox{
+  display: flex;
+  flex-direction: row;
+}
+
+.singleMovieContent{
+  width: 60%;
+}
+.singleMovieContent p{
+  font-size: 18px;
+}
+.reserveBox{
+  justify-content: right;
+  /*float: right;*/
+}
+.reserve{
+  background-color:goldenrod;
+  font-size: 18px;
+  padding: 8px 30px 8px 30px;
+}
+.reserve :hover{
+  color: rgba(255,50,25,0.5);
+  padding: 10px 10px 10px 10px;
+}
+.reserveBox p{
+  font-size: 18px;
+}
+
+
+.singleMovieBox{
+  width: 100%;
+  float: none;
+}
+.singleMovieImagesBox{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  margin: auto;
+  min-height: 90vh;
+  float: left;
+}
+.singleMovieImages{
+  display: flex;
+  width: 270px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 8px 0 8px;
+}
+.innerSingleMovieImages{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerSingleMovieImages img{
+  width: 270px;
+  height: auto;
+}
+.cast{
+  width: 30%;
+  float: right;
+}
+.cast li,p,a{
+  font-size: 18px;
+}
+.cast a{
+  text-decoration: none;
+  color: lemonchiffon;
+}
+.award-reviews a{
+  text-decoration: none;
+  color: lemonchiffon;
+}
+.award-reviews a:hover{
+  color: red;
+  font-size: 20px;
+}
+.cast ul li{
+  list-style-type: none;
+}
+.cast ul li a:hover{
+  color: red;
+  font-size: 18px;
+}
+
+/*link to go back to home page*/
+.backHome a{
+  font-size: 18px;
+  text-decoration: none;
+  color: aqua;
+}
+.backHome a:hover{
+  font-size: 20px;
+  color: brown;
+}
+
+/*mobile phone view for individual movie page*/
+@media screen and (max-width:450px){
+  .singleMovie{
+    width: 94%;
+    height: 100vh;
+    margin-bottom:850px;
+  }
+  .singleMovieImage{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .singleMovieImage img{
+    width: calc(100% - 10vw);
+    height: 290px;
+  }
+  .singleMovieImage video{
+    width: calc(100% - 10vw);
+    height: 290px;
+    
+  }
+  .singleMovieContentBox{
+    display: block;
+    flex-direction: column;
+    float: none;
+  }
+  .singleMovieContent{
+    width: 100%;
+    float: none;
+  }
+  .reserveBox{
+    justify-content: center;
+  }
+  .reserve{
+    padding: 7px 26px 7px 26px;
+  }
+  .singleMovieBox{
+    width: 100%;
+    float: none;
+  }
+  .cast{
+    width: 100%;
+    float: none;
+  }
+
+  .singleMovieImagesBox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+  }
+  .singleMovieImages{
+    display: flex;
+    width: 270px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 8px 0 8px;
+  }
+  .innerSingleMovieImages{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .innerSingleMovieImages img{
+    width: 270px;
+    height: auto;
+  }
+  
+}
+/*nest hub view of individual movie page*/
+@media screen and (max-width:1100px) and (min-width:801px){
+  .singleMovie{
+    margin-bottom: 70px;
+  }
+}
+  
+/*tablet view of individual movie page*/
+@media screen and (max-width:800px) and (min-width:500px){
+  .singleMovie{
+   width: 90%;
+   height: 100vh;
+   margin-bottom: 0;
+ }
+ .singleMovieImage{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+ }
+ .singleMovieImage img{
+  width: 280px;
+  height: 260px;
+}
+.singleMovieImage video{
+  width: 400px;
+  height: 290px; 
+}
+ .singleMovieImages{
+   display: flex;
+   width: 250px;
+   margin: 0 2px 0 2px;
+ }
+ 
+ .innerSingleMovieImages img{
+   height: 280px;
+   width: 240px;
+ }
+ .innerSingleMovieImages{
+   display: block;
+   width: 250px;
+ }
 }
