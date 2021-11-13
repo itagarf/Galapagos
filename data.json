@@ -1,0 +1,74 @@
+[
+    {
+        "id": "nntd",
+        "name": "No time to die",
+        "runtime": "2h 43m",
+        "rating": "8.0"
+    },
+    {
+        "id": "kob",
+        "name": "king of boys",
+        "runtime": "7h 19m",
+        "rating": "7.5"
+    },
+    {
+        "id": "bb",
+        "name": "bell Bottom",
+        "runtime": "2h 5m",
+        "rating": "6.0"
+    },
+    {
+        "id": "sf",
+        "name": "sea fever",
+        "runtime": "1h 29m",
+        "rating": "7.5"
+    },
+    {
+        "id": "dn",
+        "name": "dune",
+        "runtime": "2h 35m",
+        "rating": "9.5"
+    },
+    {
+        "id": "bh",
+        "name": "bhavai",
+        "runtime": "1h 54m",
+        "rating": "7.5"
+    },
+    {
+        "id": "sd",
+        "name": "sanitation day",
+        "runtime": "1h 50m",
+        "rating": "6.0"
+    },
+    {
+        "id": "tld",
+        "name": "the last duel",
+        "runtime": "2h 32m",
+        "rating": "7.5"
+    },
+    {
+        "id": "ur",
+        "name": "unroyal",
+        "runtime": "1h 36m",
+        "rating": "7.5"
+    },
+    {
+        "id": "rt",
+        "name": "rialto",
+        "runtime": "1h 30m",
+        "rating": "6.0"
+    },
+    {
+        "id": "ti",
+        "name": "the irishman",
+        "runtime": "3h 29m",
+        "rating": "7.5"
+    },
+    {
+        "id":"sn",
+        "name": "saina",
+        "runtime": "2h 15m",
+        "rating": "8.0"
+    }
+]
